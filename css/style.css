@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    background-color: #36393f;
+    color: #fff;
+}
+
+/* Ana Sayfa Stilleri */
+.landing-page {
+    min-height: 100vh;
+    background-color: #404EED;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 40px;
+    background-color: transparent;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.nav-buttons {
+    display: flex;
+    gap: 20px;
+}
+
+.btn {
+    padding: 10px 20px;
+    border-radius: 20px;
+    text-decoration: none;
+    color: #fff;
+    background-color: transparent;
+}
+
+.btn-primary {
+    background-color: #fff;
+    color: #404EED;
+}
+
+.btn-large {
+    padding: 15px 30px;
+    font-size: 18px;
+    background-color: #fff;
+    color: #404EED;
+}
+
+.hero {
+    text-align: center;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 56px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 20px;
+    margin-bottom: 40px;
+}
+
+/* Form Stilleri */
+.auth-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #2f3136;
+    border-radius: 5px;
+}
+
+.auth-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #202225;
+    background-color: #40444b;
+    color: #fff;
+    border-radius: 3px;
+}
+
+.form-group button {
+    width: 100%;
+    padding: 10px;
+    background-color: #7289da;
+    color: white;
+    border: none;
+    border-radius: 3px;
+    cursor: pointer;
+}
+
+/* Discord Arayüzü Stilleri */
+.discord-container {
+    display: flex;
+    height: 100vh;
+}
+
+.server-list {
+    width: 72px;
+    background-color: #202225;
+    padding: 10px;
+}
+
+.server-icon {
+    width: 50px;
+    height: 50px;
+    background-color: #36393f;
+    border-radius: 50%;
+    margin-bottom: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+
+.channels {
+    width: 240px;
+    background-color: #2f3136;
+    padding: 20px;
+}
+
+.channel-header {
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border-bottom: 1px solid #40444b;
+}
+
+.channel-list {
+    margin-top: 20px;
+}
+
+.channel {
+    padding: 8px;
+    margin: 2px 0;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.channel:hover {
+    background-color: #40444b;
+}
+
+.chat-area {
+    flex: 1;
+    background-color: #36393f;
+    display: flex;
+    flex-direction: column;
+}
+
+.chat-header {
+    padding: 15px;
+    border-bottom: 1px solid #40444b;
+}
+
+.messages {
+    flex: 1;
+    padding: 20px;
+    overflow-y: auto;
+}
+
+.message-input {
+    padding: 20px;
+    background-color: #40444b;
+}
+
+.message-input input {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #40444b;
+    color: #fff;
+} 
+
+.delete-btn {
+    display: none;
+    background: none;
+    border: none;
+    color: #f04747;
+    cursor: pointer;
+    padding: 4px 8px;
+    border-radius: 3px;
+    transition: background-color 0.2s;
+}
+
+.delete-btn:hover {
+    background-color: rgba(240, 71, 71, 0.1);
+}
+
+.message:hover .delete-btn {
+    display: inline-block;
+}

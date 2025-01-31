@@ -1,0 +1,16 @@
+{
+    "name": "ahmet/discord",
+    "autoload": {
+        "psr-4": {
+            "Ahmet\\Discord\\": "src/"
+        }
+    },
+    "authors": [
+        {
+            "name": "y"
+        }
+    ],
+    "require": {
+        "cboden/ratchet": "*"
+    }
+}
